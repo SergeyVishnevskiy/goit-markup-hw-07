@@ -1,8 +1,8 @@
 .subscribe-box {
     width: 570px;
-}
-.subscribe-box-wrapper {
-    display: flex;
+    &-wrapper {
+        display: flex;
+    }
 }
 .subscribe-title {
     font-size: 14px;
@@ -25,21 +25,20 @@
     background:transparent;
     margin-right: 12px;
     cursor: pointer;
-}
-.subscribe-email:not(:placeholder-shown):valid {
-    border-color: var(--accent-color);
-  }
-.subscribe-email:not(:placeholder-shown):invalid {
-    border-color: red;
-  }
-.subscribe-email:hover,
-.subscribe-email:focus {
-    border-color: var(--accent-color);
-}
-.subscribe-email::placeholder {
-    font-size: 16px;
-    line-height: 1.25;
-    color: rgba(255, 255, 255, 0.6);
+    &:not(:placeholder-shown):valid {
+        border-color: var(--accent-color);
+        }
+    &:not(:placeholder-shown):invalid {
+        border-color: red;
+        }
+    &:hover, &:focus {
+        border-color: var(--accent-color);
+        }
+    &::placeholder {
+        font-size: 16px;
+        line-height: 1.25;
+        color: rgba(255, 255, 255, 0.6);
+        }
 }
 .subscribe-button {
     display: flex;
@@ -56,21 +55,22 @@
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px; 
     cursor: pointer;
+    &::after {
+        content: '';
+        display: block;
+        background-image: url(../svg/icon-subscribe.svg);
+        width: 24px;
+        height: 24px;
+        }
+    &:hover, &:focus {
+        color: var(--accent-color);
+        background-color: var(--white-color);
+        fill: #2196F3;
+        } 
+    &::after &:hover,
+    &::after &:focus {
+         fill: #2196F3;
+        }
 }
-.subscribe-button::after {
-    content: '';
-    display: block;
-    background-image: url(../svg/icon-subscribe.svg);
-    width: 24px;
-    height: 24px;
-}
-.subscribe-button:hover,
-.subscribe-button:focus {
-    color: var(--accent-color);
-    background-color: var(--white-color);
-    fill: #2196F3;
-} 
-.subscribe-button::after .subscribe-button:hover,
-.subscribe-button::after .subscribe-button:focus {
-    fill: #2196F3;
-}
+
+
