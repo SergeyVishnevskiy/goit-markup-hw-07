@@ -6,12 +6,12 @@
     height: 100%;
     background: rgba(0, 0, 0, 0.2);
     transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    &.is-hidden .modal {
+        transform: translate(-50%, -150%) ;
+       opacity: 0;
+         transition: all 500ms linear 0ms;
+       }
 }
-.backdrop.is-hidden .modal {
-    transform: translate(-50%, -150%) ;
-   opacity: 0;
-     transition: all 500ms linear 0ms;
-   } 
 .modal  {
     position: absolute;
     left: 50%;
@@ -26,7 +26,6 @@
     transform: translate(-50%, -50%) scale(1);
     padding: 40px;
 }
-
 .close-modal {
     position: absolute;
     top: 8px;
@@ -39,8 +38,10 @@
     cursor: pointer;
     background-color: #fff;
     transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover {
+        background-color: var(--accent-color);
+    }
 }
-
 .close-svg {
     position: absolute;
     width: 11px;
@@ -50,9 +51,6 @@
     bottom: 10px;
     fill: #000000;
     cursor: pointer;
-}
-.close-modal:hover {
-    background-color: var(--accent-color);
 }
 .is-hidden {
     opacity: 0;
