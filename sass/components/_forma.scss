@@ -18,71 +18,64 @@
 .contacts-form {
     display: flex;
     font-display: column;
-}
-
-.contact-form-input:focus,
-.contact-form-message:focus {
-    outline: none;
-}
-.contact-form-input {
-    width: 100%;
-    height: 40px;
-    border: 1px solid rgba(33, 33, 33, 0.2);
-    border-radius: 4px;
-    padding-left: 42px;
-    transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    cursor: pointer;
-}
-.contact-form-input:hover,
-.contact-form-input:focus,
-.contact-form-message:hover,
-.contact-form-message:focus {
-    border-color: var(--accent-color);
-}
-.contact-form-input:hover ~ .contact-form-svg,
-.contact-form-input:focus ~ .contact-form-svg {
-    fill: var(--accent-color);
-} 
-.contact-form-field {
-    margin-bottom: 10px;
-}
-.contact-form-message {
-    resize: none;
-    width: 100%;
-    height: 120px;
-    border: 1px solid rgba(33, 33, 33, 0.2);
-    border-radius: 4px;
-    padding: 12px 16px;
-    transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    cursor: pointer;
-}
-.contact-form-field {
-    position: relative;
-}
-.contact-form-svg {
-    position: absolute;
-    bottom: 14px;
-    left: 15px;
+    &-input:focus, &:focus {
+        outline: none;
+        }
+    &-input {
+        width: 100%;
+        height: 40px;
+        border: 1px solid rgba(33, 33, 33, 0.2);
+        border-radius: 4px;
+        padding-left: 42px;
+        transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        cursor: pointer;
+        }
+    &-input:hover ~ .contact-form-svg,
+    &-input:focus ~ .contact-form-svg {
+        fill: var(--accent-color);
+        }
+    &-svg {
+        position: absolute;
+        bottom: 14px;
+        left: 15px;
+        }
+    &-input:hover, &-input:focus,
+    &-message:hover, &-message:focus {
+        border-color: var(--accent-color);
+        }
+    &-message {
+        resize: none;
+        width: 100%;
+        height: 120px;
+        border: 1px solid rgba(33, 33, 33, 0.2);
+        border-radius: 4px;
+        padding: 12px 16px;
+        transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        cursor: pointer;
+        }
+    &-field {
+        position: relative;
+        margin-bottom: 10px;
+        }
+    &-button {
+        margin: 0 auto;
+        border: none;
+        width: 200px;
+        height: 50px;
+        padding: 10px 55px;
+        font-weight: bold;
+        font-size: 16px;
+        line-height: 1.875;
+        color: var(--white-color);
+        background-color: var(--accent-color);
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+        border-radius: 4px;
+        cursor: pointer;
+        }
 }
 .button-box {
     display: flex;
     justify-content: center;
-}
-
-.contact-form-button {
-    margin: 0 auto;
-    border: none;
-    width: 200px;
-    height: 50px;
-    padding: 10px 55px;
-    font-weight: bold;
-    font-size: 16px;
-    line-height: 1.875;
-    color: var(--white-color);
-    background-color: var(--accent-color);
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-    border-radius: 4px;
-    cursor: pointer;
 }
 .visually-hidden {
     position: absolute !important;
@@ -94,28 +87,27 @@
     width: 1px !important;
     overflow: hidden;
 }
-.modal-checkbox:checked + .for-modal-checkbox::before {
-    background-color: var(--accent-color);
-    border-color: var(--accent-color);
-    background-image: url(../svg/icon-ok.svg);
-    background-size: cover;
-    
-}
 .for-modal-checkbox {
     margin-top: 20px;
     margin-bottom: 30px;
     display: flex;
     justify-content: center;
     align-items: center;
+    &::before {
+        display: block;
+        margin-right: 8.38px;
+        content: '';
+        width: 16px;    
+        height: 15px;
+        border: 2px solid #212121 ;
+        border-radius: 2px;
+    }
 }
-.for-modal-checkbox::before {
-    display: block;
-    margin-right: 8.38px;
-    content: '';
-    width: 16px;    
-    height: 15px;
-    border: 2px solid #212121 ;
-    border-radius: 2px;
+.modal-checkbox:checked + .for-modal-checkbox::before {
+    background-color: var(--accent-color);
+    border-color: var(--accent-color);
+    background-image: url(../svg/icon-ok.svg);
+    background-size: cover;
 }
 .label-title {
     font-size: 14px;
