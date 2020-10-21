@@ -6,24 +6,24 @@
     <title>Portfolio</title>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css">
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/main.min.css">
 </head>
 <body>
 <!--HEADER-->
-<header class="page-header">
-    <div class="main-header container">
-        <nav class="nav-box">
+<header class="header">
+    <div class="header-page container">
+        <nav class="navigation">
             <a href="./index.html" class="logo" aria-label="WebStudio"><span class="web">Web</span><span class="studio-header">Studio</span></a>
-            <ul class="nav-list list">
-                <li class="nav-item"><a href="./index.html" class="link">Студия</a></li>
-                <li class="nav-item"><a href="./portfolio.html" class="link current">Портфолио</a></li>
-                <li class="nav-item"><a href="./index.html" class="link">Контакты</a></li>
+            <ul class="navigation-list list">
+                <li class="navigation-item"><a href="./index.html" class="link">Студия</a></li>
+                <li class="navigation-item"><a href="./portfolio.html" class="link current">Портфолио</a></li>
+                <li class="navigation-item"><a href="" class="link">Контакты</a></li>
             </ul>
         </nav>
         <address class="address">
             <ul class="address-list__header list">
                 <li class="address-list__items">
-                    <a href="mailto:info@devstudio.com" class="contacts svg-items">
+                    <a href="mailto:info@devstudio.com" class="contacts">
                     <svg class="contacn-svg__envelop"><use href="./svg/sprite.svg#icon-envelope"></use></svg>info@devstudio.com</a>
                 </li>
                 <li>
@@ -163,6 +163,13 @@
                     </a>
                 </li>
             </ul>
+        </div>
+        <div class="subscribe-box">
+            <h3 class="subscribe-title">Подпишитесь на рассылку</h3>
+            <div class="subscribe-box-wrapper">
+                <input type="email" name="subscribe-email" class="subscribe-email" required placeholder="E-mail">
+                <button type="submit" class="subscribe-button">Подписаться</button>
+            </div>
         </div>
     </div>
 </footer>
