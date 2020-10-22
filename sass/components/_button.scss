@@ -2,15 +2,15 @@
     display: inline-block;
     border: 1px solid transparent;
     font-family: inherit;
-    color: var(--primary-text-color);
+    color: $primary-text-color;
     background-color: #F5F4FA; 
     font-size: 16px;
     border-radius: 4px;
     text-align: center;
     cursor:pointer;
     &.primary:hover, &.primary:focus {
-        color: var(--accent-color);
-        background-color: #fff;
+        color: $accent-color;
+        background-color: $white-color;
         transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
     }
     &.secondary {
@@ -21,15 +21,15 @@
         padding: 6px 22px;
     }
     &.secondary:hover, &.secondary:focus {
-        background-color: var(--accent-color); 
-        color: white;
+        background-color: $accent-color; 
+        color: $white-color;
         box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
         transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
     }
 }
 .primary {
-    color: var(--white-color);
-    background-color: var(--accent-color);
+    color: $white-color;
+    background-color: $accent-color;
     line-height: 1.86;
     font-weight: bold;
     letter-spacing: 0.06em;

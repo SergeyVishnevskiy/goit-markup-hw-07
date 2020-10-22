@@ -9,7 +9,7 @@
     }
     &-text {
         line-height: 1.714;
-        color: var(--title-text-color);
+        color: $title-text-color;
     }
     &-list {
         display: flex;

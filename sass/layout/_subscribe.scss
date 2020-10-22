@@ -7,7 +7,7 @@
 .subscribe-title {
     font-size: 14px;
     line-height: 1.143;
-    color: var(--white-color);
+    color: $white-color;
     text-transform: uppercase;
     margin-bottom: 20px;
     margin-top: 8px;
@@ -26,13 +26,13 @@
     margin-right: 12px;
     cursor: pointer;
     &:not(:placeholder-shown):valid {
-        border-color: var(--accent-color);
+        border-color: $accent-color;
         }
     &:not(:placeholder-shown):invalid {
         border-color: red;
         }
     &:hover, &:focus {
-        border-color: var(--accent-color);
+        border-color: $accent-color;
         }
     &::placeholder {
         font-size: 16px;
@@ -48,10 +48,10 @@
     font-weight: bold;
     font-size: 16px;
     line-height: 1.875;
-    color: var(--white-color);
+    color: $white-color;
     width: 200px;
     height: 50px;
-    background: var(--accent-color);
+    background: $accent-color;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px; 
     cursor: pointer;
@@ -61,16 +61,7 @@
         background-image: url(../svg/icon-subscribe.svg);
         width: 24px;
         height: 24px;
-        }
-    &:hover, &:focus {
-        color: var(--accent-color);
-        background-color: var(--white-color);
-        fill: #2196F3;
         } 
-    &::after &:hover,
-    &::after &:focus {
-         fill: #2196F3;
-        }
 }
 
 

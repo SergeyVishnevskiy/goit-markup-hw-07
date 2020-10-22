@@ -17,10 +17,10 @@
         fill: #AFB1B8;
     }
     &__link:hover {
-        background-color: var(--accent-color);
+        background-color: $accent-color;
     }
     &__link:hover &__svg {
-        fill: #FFFFFF;
+        fill: $white-color;
     }
 }
 

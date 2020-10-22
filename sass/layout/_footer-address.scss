@@ -7,7 +7,7 @@
     margin-top: 20px;
 }
 .studio-footer, .city {
-    color: var(--white-color);
+    color: $white-color;
 }
 .contacts-footer {
     color: rgba(255, 255, 255, 0.6);
@@ -15,7 +15,7 @@
     line-height: 1.71;
     transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
     &:hover, &:focus {
-        color: var(--accent-color);
+        color: $accent-color;
     }
 }
 .city {
